@@ -1,0 +1,27 @@
+<div *ngIf="sidemenu" class="side-menu-container">
+    <div class="side-menu">
+        <div class="side-menu-header-container">
+            <div class="sign-in-container">
+                <div class="sign-in">
+
+               
+                Sign In 
+                <img src="../assets/icons/person.png">
+            </div>
+            </div>
+            <div class="browse-webpage-container">
+                <div>Browse <br> webpage</div>
+            </div>
+        </div>
+        <div class="side-menu-body-container"></div>
+    </div>
+    <div class="side-menu-close-container" (click)="closeMenu()">
+      <img src="../assets/icons/close.png">
+    </div>
+
+</div>
+<app-navbar></app-navbar>
+<div class="b">
+
+<router-outlet  [routerLinkActive]="routerlinks" ></router-outlet>
+</div>

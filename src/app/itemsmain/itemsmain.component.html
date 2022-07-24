@@ -1,0 +1,18 @@
+
+    <div class="item-container"*ngFor="let item of items">
+        <img class="item-image" [src]="item.img">
+        <div class="item-titles-container">
+            <h4>{{item.name}} </h4>
+            <h3>{{item.price}} €</h3>
+        </div>
+        
+        <div class="item-gadget">
+            <div class="item-gadget-pluse">
+                <img src="../../assets/icons/plus-gray.svg">
+            </div>
+            <div class="item-gadget-cart">
+                <img src="../../assets/icons/heart-gray.svg">
+
+            </div>
+        </div>
+    </div>
