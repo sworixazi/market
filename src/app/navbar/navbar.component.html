@@ -1,22 +1,28 @@
 <div class="container-navbar">
   <div class="container-navbar-f">
-  
-  <div class="c-s logo" > 	<mat-icon (click)="openMenu()">menu</mat-icon> </div>
-  <div class="c-s c-m">
-    <div [routerLink]="['signin']" class="person-container">
-      <span>Sign In ></span>
-      <img src="../../assets/icons/person.png" class="person">
 
-    </div>    
+    <div class="c-s logo">
+    <div>
+
+      <mat-icon (click)="openMenu()">menu</mat-icon>
+    </div>
+    <div><img src="../../assets/icons/columbia.svg"> </div>
+    </div>
+    <div class="c-s c-m">
+      <div [routerLink]="['signin']" class="person-container">
+        <span>Sign In ></span>
+        <img src="../../assets/icons/person.png" class="person">
+
+      </div>
       <div class="cart-number-container"><span>0</span></div>
-    <img src="../../assets/icons/cart.png">
+      <img src="../../assets/icons/cart.png">
+    </div>
   </div>
-</div>
 
   <div class="search-container">
-    <input placeholder="search">  
+    <input placeholder="search">
     <div class="search-button-container">
       <mat-icon>search</mat-icon>
     </div>
-</div>
+  </div>
 </div>
